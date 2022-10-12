@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8FB;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: MetronicPro;
+    src: url(../font/MetronicPro.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Thin;
+    src: url(../font/MetronicPro-Thin.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-ThinItalic;
+    src: url(../font/MetronicPro-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Light;
+    src: url(../font/MetronicPro-Light.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-LightItalic;
+    src: url(../font/MetronicPro-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-SemiBold;
+    src: url(../font/MetronicPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-SemiBoldItalic;
+    src: url(../font/MetronicPro-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Italic;
+    src: url(../font/MetronicPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Bold;
+    src: url(../font/MetronicPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-BoldItalic;
+    src: url(../font/MetronicPro-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Black;
+    src: url(../font/MetronicPro-Black.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-BlackItalic;
+    src: url(../font/MetronicPro-BlackItalic.ttf);
+}
+
+/* fonts end */
+
+
+/* Header */
+
+.headermain {
+    background: linear-gradient(270deg, rgba(250, 165, 38, 1) 0%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 80%);
+    padding: 0px 20px;
+}
+
+ul.navbar-nav.mb-2.mb-lg-0 {
+    margin-left: auto !important;
+}
+
+a.nav-link {
+    color: white;
+    padding: 0 25px !important;
+    font-family: MetronicPro;
+    font-weight: 400;
+}
+
+.navbar-toggler img {
+    width: 30px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+.topsearch {
+    position: relative;
+}
+
+.topsearch input {
+    color: #F1841D;
+    font-size: 20px;
+    padding: 15px 25px;
+    width: 540px;
+    border: none;
+    border-radius: 10px;
+    font-family: MetronicPro;
+    font-weight: 400;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-left: 25px;
+}
+
+.topsearch input::placeholder {
+    font-family: MetronicPro;
+    font-weight: 400;
+    color: #F1841D;
+    font-size: 20px;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.topsearch img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menuproimg {
+    margin-left: 26px;
+    margin-right: 40px;
+}
+
+.notification {
+    margin: 0 40px;
+}
+
+/* Header end */
+
+
+/* Hero Area */
+
+.heromiddldiv {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+
+.dashtitle {
+    padding: 12px 75px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-top: 24px;
+    margin-bottom: 7px;
+}
+
+.dashitems p {
+    text-align: center;
+    font-size: 16px;
+    font-family: MetronicPro;
+    margin-bottom: 0;
+}
+
+.dashtitles h5 {
+    font-size: 20px;
+    font-family: MetronicPro;
+    margin-bottom: 6px;
+}
+
+.maindashboard {
+    padding: 8px 16px 16px 23px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-bottom: 20px;
+}
+
+.dashtop {
+    margin-bottom: 13px;
+}
+
+.recap {
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+.recapt h5 {
+    font-size: 20px;
+    font-family: MetronicPro;
+    padding: 6px 16px;
+}
+
+.recap table {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.recap table tr td:last-child {
+    text-align: right;
+}
+
+.tdmidle {
+    text-align: center !important;
+}
+
+.recap table tr td {
+    font-size: 16px;
+    font-family: MetronicPro;
+}
+
+.recap table tr td:first-child {
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.recap table tr td,
+th:last-child {
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.positiondeep {
+    font-family: MetronicPro-Black !important;
+    color: #0CB800;
+}
+
+.lineclr {
+    background-color: #F5F5F8;
+}
+
+.clrgrn {
+    color: #0CB800;
+}
+
+.clrred {
+    color: #FF0000;
+}
+
+.results {
+    background: linear-gradient(180deg, rgba(250, 165, 38, 1) 20%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 100%);
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.results p {
+    margin-bottom: 0;
+    font-family: MetronicPro-Black;
+    font-size: 16px;
+    color: white;
+}
+
+.participants {
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    height: 100%;
+    position: relative;
+}
+
+.participantstitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px 10px 12px;
+}
+
+.participantstitle p {
+    font-size: 20px;
+    font-family: MetronicPro;
+    margin-bottom: 0;
+}
+
+.participants table {
+    width: 100%;
+}
+
+.participants table tr td {
+    font-size: 16px;
+    font-family: MetronicPro;
+}
+
+.participants table tr td:first-child {
+    padding-left: 15px;
+}
+
+.results2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.littlepadd {
+    padding-left: 0px !important;
+}
+
+.dash2 {
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-bottom: 14px;
+}
+
+.salestophead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px 10px 15px;
+}
+
+.salestophead p {
+    font-size: 20px;
+    font-family: MetronicPro;
+}
+
+.salesicon {
+    display: flex;
+    align-items: center;
+}
+
+.salesicon img:first-child {
+    margin-right: 33px;
+}
+
+.dash2 table {
+    width: 100%;
+}
+
+.valuem {
+    text-align: center;
+    padding-left: 60px;
+}
+
+.dash2 table tr td:last-child {
+    text-align: right;
+}
+
+.dash2 table tr td {
+    font-family: MetronicPro;
+    font-size: 16px;
+    padding: 4px 15px;
+}
+
+.dash2 table tr th {
+    font-family: MetronicPro;
+    font-size: 16px;
+    padding: 4px 15px;
+}
+
+.tableresult {
+    background: linear-gradient(180deg, rgba(250, 165, 38, 1) 20%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 100%);
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.tableresult p {
+    margin-bottom: 0;
+    font-family: MetronicPro-Black;
+    font-size: 16px;
+    color: white;
+}
+
+.middleres {
+    margin-left: 280px;
+}
+
+.spendings {
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+.spendings table {
+    width: 100%;
+}
+
+.tabdelbtn {
+    text-align: right;
+    padding-right: 3px !important;
+    font-family: MetronicPro-Bold;
+}
+
+.tabedtbtn {
+    text-align: left;
+    padding-left: 3px !important;
+    font-family: MetronicPro-Bold;
+}
+
+.tabdelbtn img {
+    margin-right: 33px;
+}
+
+.spendings table tr td {
+    padding: 4px 15px;
+    font-family: MetronicPro;
+    font-size: 16px;
+}
+
+.spendings table tr th:first-child {
+    padding: 4px 15px;
+    font-family: MetronicPro;
+    font-size: 20px;
+}
+
+.spendings table tr th:last-child {
+    text-align: center;
+}
+
+.spendings table tr td:last-child {
+    text-align: right;
+}
+
+.expensebtn {
+    font-size: 12px;
+    font-family: MetronicPro-SemiBold;
+    color: white;
+    background: #F1841D;
+    padding: 6px 25px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-bottom: 25px;
+    margin-top: 12px;
+}
+
+/* Responsive */
+
+@media (max-width:1700px) {
+
+    /* navbar */
+
+    a.nav-link {
+        color: white;
+        padding: 0 12px !important;
+        font-family: MetronicPro;
+        font-weight: 400;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:1500px) {
+
+    /* navbar */
+
+    .topsearch input {
+        padding: 15px 25px;
+        font-size: 16px;
+        width: 360px;
+        margin-left: 25px;
+    }
+
+    .topsearch input::placeholder {
+        font-size: 16px;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:1400px) {
+
+    /* navbar */
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 300px;
+        margin-left: 25px;
+    }
+
+    .topsearch input::placeholder {
+        font-size: 16px;
+    }
+
+    .menuproimg {
+        margin-left: 18px;
+        margin-right: 20px;
+    }
+
+    .notification {
+        margin: 0 20px;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:1300px) {}
+
+
+@media (max-width:1200px) {
+
+    /* navbar */
+
+    a.nav-link {
+        color: white;
+        padding: 0 12px !important;
+        font-family: MetronicPro;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 180px;
+        margin-left: 0px;
+    }
+
+    .menuproimg {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:991px) {
+
+    /* navbar */
+
+    a.nav-link {
+        padding: 3px 10px !important;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .topsearch {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .navproitems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    img.menufilter {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.notification {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.settings {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* navbar end */
+
+    .littlepadd {
+        padding-left: 12px !important;
+    }
+
+    .results2 {
+        position: relative;
+    }
+
+    .recap {
+        margin-bottom: 12px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+    .heromiddldiv {
+        width: 675px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .littlepadd {
+        padding-left: 12px !important;
+    }
+
+    .middleres {
+        margin-left: 225px;
+    }
+
+    .littlepadd {
+        padding-left: 12px !important;
+        margin-bottom: 12px;
+    }
+
+}
+
+
+@media (max-width:576px) {
+
+    .heromiddldiv {
+        width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .maindashboard {
+        padding: 8px 8px 15px 8px;
+        background-color: white;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        margin-bottom: 20px;
+    }
+
+    .middleres {
+        margin-left: 0px;
+    }
+
+    .tabdelbtn img {
+        margin-right: 10px;
+    }
+
+    .tabdelbtn {
+        text-align: right;
+        padding-right: 3px !important;
+        font-family: MetronicPro-Bold;
+        width: 70px;
+    }
+
+}

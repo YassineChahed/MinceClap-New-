@@ -1,0 +1,1534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: MetronicPro;
+    src: url(../font/MetronicPro.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Thin;
+    src: url(../font/MetronicPro-Thin.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-ThinItalic;
+    src: url(../font/MetronicPro-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Light;
+    src: url(../font/MetronicPro-Light.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-LightItalic;
+    src: url(../font/MetronicPro-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-SemiBold;
+    src: url(../font/MetronicPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-SemiBoldItalic;
+    src: url(../font/MetronicPro-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Italic;
+    src: url(../font/MetronicPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Bold;
+    src: url(../font/MetronicPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-BoldItalic;
+    src: url(../font/MetronicPro-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Black;
+    src: url(../font/MetronicPro-Black.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-BlackItalic;
+    src: url(../font/MetronicPro-BlackItalic.ttf);
+}
+
+/* fonts end */
+
+
+/* Header */
+
+.headermain {
+    background: linear-gradient(270deg, rgba(250, 165, 38, 1) 0%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 80%);
+    padding: 0px 20px;
+}
+
+ul.navbar-nav.mb-2.mb-lg-0 {
+    margin-left: auto !important;
+}
+
+a.nav-link {
+    color: white;
+    padding: 0 25px !important;
+    font-family: MetronicPro;
+    font-weight: 400;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler img {
+    width: 30px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.topsearch {
+    position: relative;
+}
+
+.topsearch input {
+    color: #F1841D;
+    font-size: 20px;
+    padding: 15px 25px;
+    width: 540px;
+    border: none;
+    border-radius: 10px;
+    font-family: MetronicPro;
+    font-weight: 400;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-left: 25px;
+}
+
+.topsearch input::placeholder {
+    font-family: MetronicPro;
+    font-weight: 400;
+    color: #F1841D;
+    font-size: 20px;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.topsearch img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menuproimg {
+    margin-left: 26px;
+    margin-right: 40px;
+}
+
+.notification {
+    margin: 0 40px;
+}
+
+/* Header end */
+
+/* Hero Area */
+
+.heroareamain {
+    background: #F5F5F8;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    display: block;
+    margin: 0 auto;
+    width: 1375px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    padding: 45px 230px 23px 244px;
+}
+
+.mainformstart {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menuitem {
+    width: 285px;
+}
+
+.menuhead {
+    padding: 9px 22px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-bottom: 6px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menuhead p {
+    font-family: MetronicPro;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.menusitems {
+    padding: 14px 23px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.menuactive {
+    border-right: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(#FAA526, #E94E15);
+}
+
+.menusitems {
+    display: flex;
+    align-items: center;
+}
+
+.greencheck {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.greencheck2 {
+    display: none;
+}
+
+.sndmenuimg {
+    width: 45px;
+}
+
+.menusitems p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.deletebtn {
+    width: 100%;
+    border: 1px solid #FF0000;
+    background-color: #FFFFFF;
+    color: #FF0000;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: MetronicPro-SemiBold;
+    font-size: 12px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+
+.formboxes {
+    width: 600px;
+}
+
+.formbox1 {
+    padding: 54px 32px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding-bottom: 16px;
+    margin-bottom: 6px;
+}
+
+.inputsbox input {
+    border-radius: 15px;
+    padding: 16px 17px;
+    width: 100%;
+    border: none;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-bottom: 14px;
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+}
+
+input.lastbox {
+    margin-bottom: 24px;
+}
+
+.inputsbox input::placeholder {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+}
+
+.selectitems {
+    display: flex;
+    align-items: center;
+}
+
+.sectionitemsm {
+    margin-bottom: 35px;
+}
+
+.selectitems label {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+}
+
+/* .radiocheck {
+    width: 19px !important;
+    height: 19px;
+    margin-right: 10px;
+    border: 2px solid #000 !important;
+    margin-top: 0;
+}
+
+.radiocheck:checked[type=radio] {
+    background-image: url("../img/radioimg.png");
+} */
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid #000;
+    margin-right: 7px;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    border-color: black;
+}
+
+input[type="radio"]:checked:before {
+    background-image: url("../img/radioimg.png");
+}
+
+
+.formbox2 {
+    padding: 16px 32px 10px 32px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.formdate h5 {
+    margin-bottom: 26px;
+    font-size: 20px;
+    font-family: MetronicPro;
+}
+
+
+.datesmain {
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.dateform {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dates {
+    display: flex;
+    align-items: center;
+}
+
+.datess {
+    display: flex;
+    align-items: center;
+}
+
+.dateformtop {
+    margin-bottom: 20px;
+}
+
+.formdates p {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+}
+
+.datep p {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+    margin-right: 16px;
+}
+
+.dateinput {
+    position: relative;
+}
+
+.dateinput input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #000;
+    padding: 5px 16px;
+    width: 122px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+}
+
+.dateinput input::placeholder {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #000;
+}
+
+.dateinput img {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translate(-50%, -50%);
+}
+
+.date1 {
+    margin-right: 14px;
+}
+
+.timetable h5 {
+    font-family: MetronicPro;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.timemaintable {
+    margin-left: 20px;
+}
+
+.act1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.act1 p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.act1 input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #000;
+    padding: 15px;
+    width: 366px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+}
+
+.dateformtop2 {
+    margin-bottom: 7px;
+}
+
+.timedescrip p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.timedescrip {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    margin-top: 7px;
+}
+
+.timedescrip input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #000;
+    padding: 15px;
+    width: 366px;
+    height: 80px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+}
+
+.addactbtn {
+    font-size: 12px;
+    font-family: MetronicPro-SemiBold;
+    color: white;
+    background: #F1841D;
+    padding: 6px 45px;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 44px;
+}
+
+.collabratehead h4 {
+    font-size: 20px;
+    font-family: MetronicPro;
+    margin-bottom: 12px;
+}
+
+.collabratehead h5 {
+    font-family: MetronicPro;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.collabratehead p {
+    font-size: 13px;
+    font-family: MetronicPro;
+    margin-bottom: 14px;
+    color: #CDCFDF;
+}
+
+.collabrations {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.collabratepic img {
+    margin-right: 11px;
+    height: 55px;
+}
+
+.collabratext p {
+    font-family: MetronicPro;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.collabratext span {
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-family: MetronicPro;
+    font-size: 13px;
+}
+
+.collabratebtn {
+    font-size: 12px;
+    font-family: MetronicPro-SemiBold;
+    color: white;
+    background: #F1841D;
+    padding: 6px 22px;
+    border: none;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+.packs h5 {
+    font-family: MetronicPro;
+    font-size: 20px;
+}
+
+.pakages {
+    margin-right: 160px;
+}
+
+.pack1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.packtitlew {
+    width: 120px;
+    font-family: MetronicPro-SemiBold;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.packt {
+    width: 120px;
+}
+
+.pack1 input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+    padding: 15px;
+    width: 100%;
+    height: 47px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.pack input::placeholder {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+}
+
+.pack2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.pack2 input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+    padding: 7px 33px;
+    width: 122px;
+    height: 27px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.pack3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pack3 input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+    padding: 7px 33px;
+    width: 122px;
+    height: 27px;
+    margin-right: 10px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button#dropdownMenuButton {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+    padding: 7px 33px;
+    width: 122px;
+    height: 27px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    background: white;
+}
+
+button#dropdownMenuButton p {
+    margin-bottom: 0;
+    margin-top: -4px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+button#dropdownMenuButton img {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.pack4 {
+    display: flex;
+}
+
+.pack4 input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #CDCFDF;
+    padding: 7px 33px;
+    width: 100%;
+    height: 116px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.packbtn {
+    font-size: 12px;
+    font-family: MetronicPro-SemiBold;
+    color: white;
+    background: #F1841D;
+    padding: 6px 25px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-left: 172px;
+    margin-bottom: 80px;
+    margin-top: 24px;
+}
+
+.packsreality h5 {
+    font-family: MetronicPro;
+    font-size: 20px;
+    margin-bottom: 33px;
+}
+
+.packname {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.packname p {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-right: 55px;
+    margin-bottom: 0;
+}
+
+.packname h6 {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+    color: #F1841D;
+}
+
+.periods {
+    margin-right: 150px;
+}
+
+.period1 {
+    margin-bottom: 38px;
+}
+
+.period11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.period11 p {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+}
+
+.mainperiodsdate {
+    display: flex;
+    align-items: center;
+}
+
+.perids {
+    position: relative;
+    margin-right: 20px;
+}
+
+.perids input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #000;
+    padding: 5px 16px;
+    width: 122px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+}
+
+.perids img {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translate(-50%, -50%);
+}
+
+.otrdate {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #000;
+    padding: 5px 16px;
+    width: 122px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+}
+
+.period12 p {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+}
+
+.period12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button#dropdownMenuButton2 {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: black;
+    padding-right: 20px;
+    width: 122px;
+    height: 27px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    background: white;
+}
+
+button#dropdownMenuButton2 p {
+    margin-bottom: 0;
+    margin-top: -2px;
+    font-size: 13px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+button#dropdownMenuButton2 img {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.period12 {
+    margin-bottom: 45px;
+}
+
+.periodlast {
+    margin-bottom: 80px;
+}
+
+.purchasetitle h5 {
+    font-family: MetronicPro;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.purchasetitle p {
+    font-size: 13px;
+    font-family: MetronicPro;
+    margin-bottom: 12px;
+    color: #CDCFDF;
+}
+
+.packname2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.packname2 p {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-right: 29px;
+    margin-bottom: 0;
+}
+
+.packname2 h6 {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+    color: #F1841D;
+}
+
+.nopurchase {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.nopurchase label {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+}
+
+.purchasequantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.puschases {
+    display: flex;
+    align-items: center;
+}
+
+.puschases label {
+    font-size: 18px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+}
+
+.purchesqinput input {
+    font-family: MetronicPro;
+    font-size: 13px;
+    color: #000;
+    padding: 5px 16px;
+    width: 122px;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.purchases2 {
+    margin-left: 26px;
+}
+
+.noraido input {
+    display: none;
+}
+
+.noraido input {
+    display: none;
+}
+
+.purchesqinput2 input {
+    background: #CECFDF !important;
+    color: white;
+}
+
+.purchesqinput2 input::placeholder {
+    color: white;
+}
+
+.purchasequantity2 {
+    margin-bottom: 60px;
+}
+
+.eventcovertitle h5 {
+    font-family: MetronicPro;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.eventcover {
+    margin-bottom: 45px;
+}
+
+.eventcovertitle p {
+    font-size: 13px;
+    font-family: MetronicPro;
+    margin-bottom: 18px;
+    color: #CDCFDF;
+}
+
+.eventcoverup {
+    background: #E2E2E2;
+    height: 244px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #CECFDF;
+    position: relative;
+}
+
+.upitems {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upitems p {
+    color: #000000;
+    font-size: 18px;
+    font-family: MetronicPro;
+    margin-bottom: 5px;
+}
+
+.upitems img {
+    width: 49px;
+    display: block;
+    margin: 0 auto;
+}
+
+.eventpack1 {
+    margin-bottom: 20px;
+}
+
+.eventpack1title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.eventpack1title p {
+    font-size: 18px;
+    font-family: MetronicPro;
+    margin-right: 14px;
+    margin-bottom: 0;
+}
+
+.eventpack1title h6 {
+    font-size: 18px;
+    font-family: MetronicPro;
+    color: #F1841D;
+    margin-bottom: 0;
+}
+
+.upbox2 {
+    height: 145px;
+    width: 145px;
+    background: #CECFDF;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.upitems2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.upitems2 p {
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-family: MetronicPro;
+    text-align: center;
+}
+
+.upitems2 img {
+    width: 36px;
+    display: block;
+    margin: 0 auto;
+}
+
+.eventpack2 {
+    margin-bottom: 0;
+}
+
+.formbtnsmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formbtnsmain button {
+    background: linear-gradient(180deg, rgba(250, 165, 38, 1) 20%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 100%);
+    border: none;
+    border-radius: 10px;
+    width: 140px;
+    padding: 13px;
+    font-size: 12px;
+    font-family: MetronicPro;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width:1700px) {
+
+    /* navbar */
+
+    a.nav-link {
+        color: white;
+        padding: 0 12px !important;
+        font-family: MetronicPro;
+        font-weight: 400;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:1500px) {
+
+    /* navbar */
+
+    .topsearch input {
+        padding: 15px 25px;
+        font-size: 16px;
+        width: 360px;
+        margin-left: 25px;
+    }
+
+    .topsearch input::placeholder {
+        font-size: 16px;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:1400px) {
+
+    /* navbar */
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 300px;
+        margin-left: 25px;
+    }
+
+    .topsearch input::placeholder {
+        font-size: 16px;
+    }
+
+    .menuproimg {
+        margin-left: 18px;
+        margin-right: 20px;
+    }
+
+    .notification {
+        margin: 0 20px;
+    }
+
+    /* navbar end */
+
+
+    .heroareamain {
+        background: #F5F5F8;
+        border: 1px solid #E2E2E2;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        display: block;
+        margin: 0 auto;
+        width: 1300px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        padding: 45px 200px 23px 200px;
+    }
+
+}
+
+
+@media (max-width:1300px) {
+
+    .heroareamain {
+        background: #F5F5F8;
+        border: 1px solid #E2E2E2;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        display: block;
+        margin: 0 auto;
+        width: 1100px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        padding: 45px 100px 23px 100px;
+    }
+
+}
+
+@media (max-width:1200px) {
+
+    /* navbar */
+
+    a.nav-link {
+        color: white;
+        padding: 0 12px !important;
+        font-family: MetronicPro;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 180px;
+        margin-left: 0px;
+    }
+
+    .menuproimg {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* navbar end */
+
+    .heroareamain {
+        background: #F5F5F8;
+        border: 1px solid #E2E2E2;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        display: block;
+        margin: 0 auto;
+        width: 1000px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        padding: 45px 50px 23px 50px;
+    }
+
+}
+
+
+@media (max-width:991px) {
+
+    /* navbar */
+
+    a.nav-link {
+        padding: 3px 10px !important;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .topsearch {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .navproitems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    img.menufilter {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.notification {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.settings {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* navbar end */
+
+    .heroareamain {
+        background: #F5F5F8;
+        border: 1px solid #E2E2E2;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        display: block;
+        margin: 0 auto;
+        width: 930px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        padding: 30px 15px 15px 15px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+
+    .heroareamain {
+        background: #F5F5F8;
+        border: 1px solid #E2E2E2;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        padding: 30px 15px 15px 15px;
+    }
+
+    .mainformstart {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .formbox2 {
+        padding: 16px 10px 10px 10px;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+        border-radius: 10px;
+        margin-bottom: 24px;
+    }
+
+    .formbox1 {
+        padding: 20px 10px;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        padding-bottom: 16px;
+        margin-bottom: 6px;
+    }
+
+    .menuitem {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .formboxes {
+        width: 100%;
+    }
+
+    .pakages {
+        margin-right: 110px;
+    }
+
+    .periods {
+        margin-right: 110px;
+    }
+
+}
+
+
+@media (max-width:576px) {
+
+    .heroareamain {
+        background: #F5F5F8;
+        border: 1px solid #E2E2E2;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        display: block;
+        margin: 0 auto;
+        width: 320px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        padding: 20px 6px 10px 6px;
+    }
+
+    .dates {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .date1 {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+
+    .timemaintable {
+        margin-left: 0px;
+    }
+
+    .act1 input {
+        font-family: MetronicPro;
+        font-size: 13px;
+        color: #000;
+        padding: 15px;
+        width: 180px;
+        -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        border: none;
+        border-radius: 15px;
+    }
+
+    .timedescrip input {
+        font-family: MetronicPro;
+        font-size: 13px;
+        color: #000;
+        padding: 15px;
+        width: 175px;
+        height: 80px;
+        -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        border: none;
+        border-radius: 15px;
+    }
+
+    .pakages {
+        margin-right: 0px;
+    }
+
+    .prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pack3 input {
+        margin-right: 0px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .pack2 input {
+        width: 100%;
+    }
+
+    .dropdown2 {
+        width: 100%;
+    }
+
+    button#dropdownMenuButton {
+        width: 100%;
+    }
+
+    .packbtn {
+        font-size: 12px;
+        font-family: MetronicPro-SemiBold;
+        color: white;
+        background: #F1841D;
+        padding: 6px 25px;
+        border: none;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        margin-left: 129px;
+        margin-bottom: 80px;
+        margin-top: 24px;
+    }
+
+    .mainperiodsdate {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .periods {
+        margin-right: 0;
+    }
+
+    .perids {
+        position: relative;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .purchasequantity {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .puschases label {
+        font-size: 18px;
+        font-family: MetronicPro-SemiBold;
+        margin-bottom: 0;
+        width: 260px;
+    }
+
+    .formbtnsmain {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .formbtnsmain button {
+        background: linear-gradient(180deg, rgba(250, 165, 38, 1) 20%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 100%);
+        border: none;
+        border-radius: 10px;
+        width: 140px;
+        padding: 13px;
+        font-size: 12px;
+        font-family: MetronicPro;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+}

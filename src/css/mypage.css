@@ -1,0 +1,1511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F8F8FB;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: MetronicPro;
+    src: url(../font/MetronicPro.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Thin;
+    src: url(../font/MetronicPro-Thin.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-ThinItalic;
+    src: url(../font/MetronicPro-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Light;
+    src: url(../font/MetronicPro-Light.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-LightItalic;
+    src: url(../font/MetronicPro-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-SemiBold;
+    src: url(../font/MetronicPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-SemiBoldItalic;
+    src: url(../font/MetronicPro-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Italic;
+    src: url(../font/MetronicPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Bold;
+    src: url(../font/MetronicPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-BoldItalic;
+    src: url(../font/MetronicPro-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-Black;
+    src: url(../font/MetronicPro-Black.ttf);
+}
+
+@font-face {
+    font-family: MetronicPro-BlackItalic;
+    src: url(../font/MetronicPro-BlackItalic.ttf);
+}
+
+/* fonts end */
+
+
+/* Header */
+
+.headermain {
+    background: linear-gradient(270deg, rgba(250, 165, 38, 1) 0%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 80%);
+    padding: 0px 20px;
+}
+
+ul.navbar-nav.mb-2.mb-lg-0 {
+    margin-left: auto !important;
+}
+
+a.nav-link {
+    color: white;
+    padding: 0 25px !important;
+    font-family: MetronicPro;
+    font-weight: 400;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler img {
+    width: 30px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.topsearch {
+    position: relative;
+}
+
+.topsearch input {
+    color: #F1841D;
+    font-size: 20px;
+    padding: 15px 25px;
+    width: 540px;
+    border: none;
+    border-radius: 10px;
+    font-family: MetronicPro;
+    font-weight: 400;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    margin-left: 25px;
+}
+
+.topsearch input::placeholder {
+    font-family: MetronicPro;
+    font-weight: 400;
+    color: #F1841D;
+    font-size: 20px;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.topsearch img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menuproimg {
+    margin-left: 26px;
+    margin-right: 40px;
+}
+
+.notification {
+    margin: 0 40px;
+}
+
+/* Header end */
+
+
+
+/* Left Right Area */
+
+/* Right Side Area */
+
+.rightareamain {
+    width: 314px;
+    /* height: 1000px; */
+    background: white;
+    float: right;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+.rightitems {
+    padding: 27px 18px;
+}
+
+.searchbar {
+    position: relative;
+    margin-bottom: 19px;
+}
+
+.searchbar input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    font-family: MetronicPro;
+    font-size: 14px;
+    color: #000000;
+}
+
+.searchbar input::placeholder {
+    font-family: MetronicPro;
+    font-size: 14px;
+    color: #000000;
+}
+
+.searchbar img {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%, -50%);
+}
+
+.searchproitem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.searchproitem img {
+    width: 44px;
+    margin-right: 12px;
+}
+
+.pronames {
+    width: 100%;
+}
+
+.proname {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proname p {
+    font-family: MetronicPro-Bold;
+    color: #3e3f3e;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.proname span {
+    font-family: MetronicPro;
+    color: #989ab3;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.pronames h5 {
+    font-family: MetronicPro;
+    color: #65667f;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+
+.btmbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #E2E2E2;
+    padding: 12px 0;
+}
+
+.btmbuttons img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.chatsbtn {
+    border: 1px solid #16C7FF;
+    background: #16C7FF;
+    color: white;
+    padding: 6px 30px;
+    font-family: MetronicPro;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.demosbtn {
+    border: 1px solid #16C7FF;
+    background: white;
+    color: #16C7FF;
+    padding: 6px 22px;
+    font-family: MetronicPro;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+/* Right Side Area End */
+
+
+/* Left Side Area */
+
+.leftareamain {
+    width: 456px;
+    background: white;
+    float: left;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+.livehead {
+    background: #F5F5F8;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.liveheadtitle {
+    display: flex;
+    align-items: center;
+}
+
+.liveheadtitle img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.livenames p {
+    font-family: MetronicPro;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.livenames h5 {
+    font-family: MetronicPro-SemiBold;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.liveheadiscover {
+    display: flex;
+    align-items: center;
+}
+
+.liveheadiscover img {
+    width: 35px;
+}
+
+.liveheadiscover img:first-child {
+    margin-right: 7px;
+}
+
+.liveshow {
+    background: #F5F5F8;
+}
+
+.livevideo {
+    position: relative;
+}
+
+.livesvid {
+    width: 100%;
+}
+
+.livevideoviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.mainviews {
+    display: flex;
+    align-items: center;
+}
+
+.mainviews img {
+    margin-right: 8px;
+}
+
+.mainviews p {
+    font-family: MetronicPro;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.livesreactions {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reactions img {
+    display: block;
+    margin: 0 auto;
+}
+
+.reactions p {
+    text-align: center;
+    font-family: MetronicPro;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.descriptionbox {
+    padding: 10px 14px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.describs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.describs h5 {
+    font-family: MetronicPro-SemiBold;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #CECFDF;
+}
+
+.descriptionbox p {
+    font-family: MetronicPro;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.commentbox {
+    padding: 12px;
+    padding-bottom: 46px;
+    background-color: #F5F5F8;
+}
+
+.comments {
+    padding: 8px 12px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.commentpro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.commentpropic {
+    width: 44px;
+    margin-right: 8px;
+}
+
+.commentname {
+    width: 100%;
+}
+
+.commentowner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commentowner p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.commentname h6 {
+    font-family: MetronicPro-SemiBold;
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: #CECFDF;
+}
+
+.maincomment {
+    margin-left: 40px;
+    margin-bottom: 0;
+    font-family: MetronicPro;
+    font-size: 14px;
+}
+
+
+/* Left Side Area End */
+
+/* Hero Area */
+
+.heroareamain {
+    width: 1150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.heromainarea {
+    margin-left: 195px;
+    margin-right: 55px;
+}
+
+/* Profile Head */
+
+.profiledtls {
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+
+.profilecover {
+    position: relative;
+}
+
+.coverpic {
+    width: 100%;
+}
+
+.coveredit img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+.covershortcuts {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.covershortcuts img {
+    width: 29px;
+    margin-right: 5px;
+}
+
+.profilepictures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 61px 18px 14px;
+}
+
+.namediv p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.namediv h5 {
+    font-family: MetronicPro;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.proimg {
+    position: relative;
+    width: 131px;
+}
+
+.proimg img:first-child {
+    width: 131px;
+}
+
+.editpro {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.badge1 {
+    margin-top: -70px;
+    margin-left: -10px;
+}
+
+.badge2 {
+    margin-top: -50px;
+    margin-left: -5px;
+}
+
+.badge3 {
+    margin-top: -25px;
+}
+
+.badge7 {
+    margin-top: -74px;
+    margin-left: -7px;
+}
+
+.badge6 {
+    margin-top: -50px;
+}
+
+.badge5 {
+    margin-top: -20px;
+    margin-left: -3px;
+}
+
+.profileactivitis {
+    display: flex;
+    align-items: center;
+}
+
+.activity1 {
+    margin-right: 20px;
+}
+
+.activity1 p {
+    margin-bottom: 7px;
+    font-family: MetronicPro;
+    font-size: 20px;
+}
+
+.activity1 img {
+    width: 25px;
+    margin-bottom: 7px;
+}
+
+.activity1 h6 {
+    margin-bottom: 7px;
+    font-family: MetronicPro;
+    font-size: 10px;
+}
+
+.profilepics {
+    margin-top: -95px;
+}
+
+.countryname {
+    margin-bottom: 0;
+}
+
+.dashboard {
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashitems img {
+    width: 47px;
+    margin: 10px 30px;
+}
+
+.dashitemactive {
+    position: relative;
+}
+
+.dashitemactive::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 5px solid #F1C1C2;
+    bottom: -0px;
+    left: 0;
+    border-radius: 5px;
+}
+
+
+/* Profile Head End */
+
+
+
+
+/* Main Contents */
+
+.maincontents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maincontent1 {
+    width: 586px;
+}
+
+.maincontent2 {
+    width: 294px;
+}
+
+.content1head {
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentitems {
+    display: flex;
+    align-items: center;
+}
+
+.contentitems img {
+    margin-right: 8px;
+}
+
+.contentitems p {
+    font-family: MetronicPro;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+.mainpost {
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    border-radius: 10px;
+    margin-bottom: 27px;
+}
+
+.commentpro2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px 22px 18px 36px;
+}
+
+.viewersdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 23px 15px 63px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.viwes1 {
+    display: flex;
+    align-items: center;
+}
+
+.viewersclap {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.viewersclap img {
+    margin-right: 2px;
+}
+
+.viewersclap p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.viewershow {
+    display: flex;
+    align-items: center;
+}
+
+.viewersimges {
+    margin-right: 5px;
+}
+
+.viewersicon {
+    margin-left: -15px;
+}
+
+.viewershow p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.viwes2 {
+    display: flex;
+    align-items: center;
+}
+
+.viwes2 p:first-child {
+    margin-right: 20px;
+}
+
+.viwes2 p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.postreations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 24px;
+    background: #F5F5F8;
+    border-radius: 10px;
+}
+
+.reactitems img {
+    display: block;
+    margin: 0 auto;
+}
+
+.reactitems p {
+    margin-bottom: 0;
+    font-family: MetronicPro;
+    font-size: 11px;
+    text-align: center;
+}
+
+.reactitems2 p {
+    color: #16C7FF;
+    font-size: 16px;
+}
+
+.videocontent {
+    display: flex;
+    margin: 0 8px 10px 36px;
+}
+
+.videoplay {
+    position: relative;
+    margin-right: 14px;
+}
+
+.videoplayer {
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.videotext h2 {
+    font-family: MetronicPro-SemiBold;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.videotext p {
+    font-family: MetronicPro;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.postcontent {
+    margin: 0 25px 10px 36px;
+}
+
+.postcontent p {
+    font-family: MetronicPro;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.nordvpn {
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.calenderdiv {
+    background: #F5F5F8;
+    -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    border-radius: 10px;
+    margin-bottom: 27px;
+}
+
+.calender {
+    padding: 13px 40px 25px 40px;
+}
+
+.calendertiltle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.calendertiltle p {
+    font-size: 15px;
+    font-family: MetronicPro-SemiBold;
+    margin-bottom: 0;
+}
+
+.calenderlr img:first-child {
+    margin-right: 18px;
+}
+
+.maincalender table {
+    width: 100%;
+}
+
+.maincalender table tr th {
+    font-size: 13px;
+    font-family: MetronicPro-SemiBold;
+    padding: 4px;
+    text-align: center;
+}
+
+.maincalender table tr td {
+    font-size: 13px;
+    font-family: MetronicPro-SemiBold;
+    padding: 6px;
+    text-align: center;
+}
+
+.tableselected {
+    color: white;
+    border-radius: 50%;
+    background: #615DFA;
+    position: relative;
+}
+
+.tableselected::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #16C7FF;
+    bottom: -7px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.tableselected::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #615DFA;
+    bottom: -7px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.calenderevents {
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+    border-radius: 10px;
+    padding: 28px 20px 30px 23px;
+}
+
+.eventtitle p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.eventsitem {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.times {
+    margin-right: 28px;
+}
+
+.times p {
+    font-family: MetronicPro;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.times h6 {
+    font-family: MetronicPro;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.eventcolor {
+    margin-right: 18px;
+}
+
+.eventcolor img {
+    width: 10px;
+}
+
+.eventxt p {
+    font-family: MetronicPro-SemiBold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.eventxt h5 {
+    font-family: MetronicPro;
+    font-size: 12px;
+}
+
+.eventlast {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/* Main Contents End */
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (max-width:1700px) {
+
+    /* navbar */
+
+    a.nav-link {
+        color: white;
+        padding: 0 12px !important;
+        font-family: MetronicPro;
+        font-weight: 400;
+    }
+
+    /* navbar end */
+
+    /* Left right */
+
+    .rightareamain {
+        width: 260px;
+        float: right;
+    }
+
+    .leftareamain {
+        width: 400px;
+        float: left;
+    }
+
+
+    /* Left right End */
+
+
+
+
+}
+
+
+@media (max-width:1500px) {
+
+    /* navbar */
+
+    .topsearch input {
+        padding: 15px 25px;
+        font-size: 16px;
+        width: 360px;
+        margin-left: 25px;
+    }
+
+    .topsearch input::placeholder {
+        font-size: 16px;
+    }
+
+    /* navbar end */
+
+    /* Left right */
+
+    .leftrightareamain {
+        display: flex;
+    }
+
+    .rightarea {
+        width: 50%;
+    }
+
+    .rightareamain {
+        width: 100%;
+        height: 100%;
+        float: unset;
+        position: relative;
+    }
+
+    .leftarea {
+        width: 50%;
+    }
+
+    .leftareamain {
+        width: 100%;
+        float: unset;
+    }
+
+    .btmbuttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #E2E2E2;
+        padding: 12px 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    /* middle body */
+
+    .heroareamain {
+        width: unset;
+    }
+
+    .heromainarea {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+
+    /* Left right End */
+
+}
+
+
+@media (max-width:1400px) {
+
+    /* navbar */
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 300px;
+        margin-left: 25px;
+    }
+
+    .topsearch input::placeholder {
+        font-size: 16px;
+    }
+
+    .menuproimg {
+        margin-left: 18px;
+        margin-right: 20px;
+    }
+
+    .notification {
+        margin: 0 20px;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:1300px) {}
+
+
+@media (max-width:1200px) {
+
+    /* navbar */
+
+    a.nav-link {
+        color: white;
+        padding: 0 12px !important;
+        font-family: MetronicPro;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 180px;
+        margin-left: 0px;
+    }
+
+    .menuproimg {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* navbar end */
+
+}
+
+
+@media (max-width:991px) {
+
+    /* navbar */
+
+    a.nav-link {
+        padding: 3px 10px !important;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .topsearch {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .topsearch input {
+        padding: 10px 15px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .navproitems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    img.menufilter {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.notification {
+        width: 20px;
+        height: 20px;
+    }
+
+    img.settings {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* navbar end */
+
+
+}
+
+
+@media (max-width:768px) {
+
+    /* profile items */
+
+    .heromainarea {
+        width: 740px;
+        margin: 0 auto;
+    }
+
+    .profilepictures {
+        position: relative;
+    }
+
+    .profilepics {
+        margin-top: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+        transform: translate(-50%, -50%);
+    }
+
+    .profilepictures {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 10px 16px 10px;
+    }
+
+    .dashitems img {
+        width: 40px;
+        margin: 10px 25px;
+    }
+
+    /* profile items end */
+
+
+    .maincontent1 {
+        width: 430px;
+    }
+
+}
+
+
+@media (max-width:576px) {
+
+    /* left Right */
+
+    .leftrightareamain {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .leftarea {
+        width: 100%;
+    }
+
+    .rightarea {
+        width: 100%;
+    }
+
+    /* left Right End */
+
+    /* profile items */
+
+    .heromainarea {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .profilepictures {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        padding: 16px 10px 16px 10px;
+    }
+
+    .profiledtls {
+        margin: 0 10px;
+        margin-top: 25px;
+        margin-bottom: 27px;
+    }
+
+    .covershortcuts img {
+        width: 13px;
+        margin-right: 5px;
+    }
+
+    .coveredit img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 12px;
+    }
+
+    .profilepics {
+        margin-top: 0;
+        position: absolute;
+        left: 50%;
+        bottom: 63px;
+        transform: translate(-50%, -50%);
+        width: 68px;
+        height: 104px;
+    }
+
+    .proimg {
+        position: relative;
+        width: 60px;
+    }
+
+    .proimg img:first-child {
+        width: 60px;
+    }
+
+    .editpro {
+        width: 12px;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .probadges img {
+        width: 9px;
+    }
+
+    .badge1 {
+        margin-top: -45px;
+        margin-left: -6px;
+    }
+
+    .badge2 {
+        margin-top: -33px;
+        margin-left: -3px;
+    }
+
+    .badge3 {
+        margin-top: -19px;
+    }
+
+    .badge4 {
+        margin-left: -5px;
+        margin-top: -5px;
+    }
+
+    .badge5 {
+        margin-top: -15px;
+        margin-left: -3px;
+    }
+
+    .badge6 {
+        margin-top: -34px;
+    }
+
+    .badge7 {
+        margin-top: -52px;
+        margin-left: -5px;
+    }
+
+    .namediv p {
+        font-family: MetronicPro-SemiBold;
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .namediv h5 {
+        font-family: MetronicPro;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .activity1 {
+        margin-right: 12px;
+    }
+
+    .activity1 p {
+        margin-bottom: 7px;
+        font-family: MetronicPro;
+        font-size: 15px;
+    }
+
+    .dashitems img {
+        width: 26px;
+        margin: 10px 8px;
+    }
+
+    .dashboard {
+        background: white;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        margin: 0 10px;
+        margin-bottom: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* profile items end */
+
+
+
+    .maincontents {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .maincontent2 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .maincontent1 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .content1head {
+        background: white;
+        -webkit-box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 16%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .videoplay {
+        position: relative;
+        margin-right: 8px;
+        width: 100px;
+    }
+
+    .videoplay img:first-child {
+        width: 100px;
+    }
+
+    .videotext h2 {
+        font-family: MetronicPro-SemiBold;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .videocontent {
+        display: flex;
+        margin: -5px 5px 6px 10px;
+    }
+
+    .videotext p {
+        font-family: MetronicPro;
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+
+    .viewersdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 8px 10px 5px;
+        border-bottom: 1px solid #E2E2E2;
+    }
+
+    .viewersclap {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+    }
+
+    .viwes2 p:first-child {
+        margin-right: 10px;
+    }
+
+    .postcontent p {
+        font-family: MetronicPro;
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+
+
+
+
+}
