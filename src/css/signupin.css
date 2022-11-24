@@ -1,0 +1,270 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* fonts */
+
+@font-face {
+    font-family: MetronicPro;
+    src: url(../assets/font/MetronicPro.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-Thin;
+    src: url(../assets/font/MetronicPro-Thin.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-ThinItalic;
+    src: url(../assets/font/MetronicPro-ThinItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-Light;
+    src: url(../assets/font/MetronicPro-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-LightItalic;
+    src: url(../assets/font/MetronicPro-LightItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-SemiBold;
+    src: url(../assets/font/MetronicPro-SemiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-SemiBoldItalic;
+    src: url(../assets/font/MetronicPro-SemiBoldItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-Italic;
+    src: url(../assets/font/MetronicPro-Italic.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-Bold;
+    src: url(../assets/font/MetronicPro-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-BoldItalic;
+    src: url(../assets/font/MetronicPro-BoldItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-Black;
+    src: url(../assets/font/MetronicPro-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: MetronicPro-BlackItalic;
+    src: url(../assets/font/MetronicPro-BlackItalic.ttf);
+  }
+  
+  /* fonts end */
+/* Hero Area */
+
+body {
+    background: white;
+}
+
+.signheroarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.signheroareamain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 468px;
+    background-color: white;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    /* -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.16); */
+}
+
+.signherohead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: linear-gradient(180deg, rgba(250, 165, 38, 1) 20%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 100%);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.signherohead button {
+    font-family: MetronicPro-SemiBold;
+    color: white;
+    background: transparent;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.signinbtn {
+    margin-left: 38px;
+}
+
+.activebtn {
+    border: 1px solid white !important;
+}
+
+.signherohead img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signformarea {
+    margin: 27px 27px 17px 27px;
+    
+}
+
+.signformarea input {
+    width: 100%;
+    margin-bottom: 9.5px;
+    padding: 9px 18px;
+    color: black;
+    font-family: MetronicPro;
+    font-size: 13px;
+    border-radius: 15px;
+    border: none;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+.signformarea input::placeholder {
+    color: #CDCFDF;
+}
+
+.signpassdiv {
+    position: relative;
+    margin-bottom: 9.5px;
+}
+
+.signpassdiv input {
+    margin-bottom: 0 !important;
+}
+
+.signpassdiv img {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signconditions {
+    display: flex;
+    align-items: center;
+}
+
+.signconditions p {
+    margin-bottom: 3px;
+    font-family: MetronicPro-SemiBold;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.signforgot p {
+    margin-bottom: 24px;
+}
+
+.signforgot a {
+    text-decoration: none;
+    color: #F1841D;
+    font-family: MetronicPro-SemiBold;
+}
+
+.signjoinbtn {
+    width: 100%;
+    font-family: MetronicPro-Bold;
+    background: linear-gradient(180deg, rgba(250, 165, 38, 1) 20%, rgba(250, 165, 38, 1) 0%, rgba(233, 78, 21, 1) 100%);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 9px;
+}
+
+.signform-check-input {
+    height: 16px !important;
+    width: 16px !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    border: 2px solid #FAA526 !important;
+    box-shadow: none !important;
+}
+
+.signform-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.signform-check-input:checked {
+    background-color: #FAA526;
+    border-color: #f15a22;
+}
+
+.selectCountry {
+    width: 100%;
+    margin-bottom: 9.5px;
+    padding: 9px 18px;
+    color: #CDCFDF;
+    font-family: MetronicPro;
+    font-size: 13px;
+    border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    text-align: left;
+
+}
+
+button.btn.btn-secondary.dropdown-toggle {
+    width: 100%;
+    margin-bottom: 9.5px;
+    padding: 9px 18px;
+    color: #CDCFDF;
+    font-family: MetronicPro;
+    font-size: 13px;
+    border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.16);
+    text-align: left;
+    
+    
+}
+
+.signdropdown-toggle::after {
+    display: none;
+}
+
+button.btn.btn-secondary.dropdown-toggle img {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul.dropdown-menu.show {
+    width: 100%;
+}

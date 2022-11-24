@@ -11,7 +11,7 @@ import Profile from "./pages/Profile";
 import Deals from "./pages/Deals";
 import Likes from "./pages/Likes";
 import Chat from "./components/chat/Chat";
-
+import SingupModal from "./modals/SingupModal";
 // import Likes  from "./pages/Likes ";
 
 import { useEffect } from "react";
@@ -40,6 +40,8 @@ function App() {
   return (
     <>
       <Router>
+        <Chat />
+
         <NavBar />
 
         <Chat />
@@ -49,9 +51,10 @@ function App() {
           <Route exact path="/" element={<Home isConnected={isConnected} />} />
           <Route exact path="/Home" element={<Home />} />
           <Route exact path="/Profile" element={<Profile />} />
-          <Route exact path="/Deals" element={<Deals />} />
-          <Route exact path="/Likes" element={<Likes />} />
+          <Route exact path="/Deals" element={<Deals />} />*
         </Routes>
+
+        <SingupModal />
       </Router>
     </>
   );
