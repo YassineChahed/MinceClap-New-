@@ -4,11 +4,13 @@ import { useLazyQuery, useMutation } from "@apollo/client";
 import client from "../apollo/client";
 import {
   FORGOT_PASSWORD,
+  LOAD_ME,
   POST_SIGNIN,
   POST_SIGNUP,
   RESET_PASSWORD,
   VERIFY_EMAIL,
 } from "../gql/Auth";
+import { UserContext } from "./UserContext";
 
 const AuthContext = React.createContext();
 
@@ -17,47 +19,47 @@ function AuthContextProvider({ children }) {
   const [authentificationError, setAuthenticationError] = useState(null);
   const [authentificationSuccess, setAuthenticationSuccess] = useState(null);
 
-  //const { setActiveProfile } = useContext(UserContext)
+  const { setActiveProfile } = useContext(UserContext);
 
   function toggleAuthentification() {
     setisAuthenticated(!isAuthenticated);
   }
 
   /// Load User
-  // const [loaduser] = useLazyQuery(LOAD_ME, {
-  //   fetchPolicy: `network-only`,
+  const [loaduser] = useLazyQuery(LOAD_ME, {
+    fetchPolicy: `network-only`,
 
-  //   onCompleted: (data) => {
-  //     if (data) {
-  //       setActiveProfile((user) => {
-  //         return {
-  //           ...user,
-  //           userId: data.me._id,
-  //           firstName: data.me.firstName,
-  //           lastName: data.me.lastName,
-  //           birthDate: data.me.birthDate,
-  //           address: data.me.address,
-  //           phoneNumber: data.me.phoneNumber,
-  //           background: data.me.background,
-  //           accountState: data.me.accountState,
-  //           profileImageUrl: data.me.avatar,
-  //           walletId: data.me.walletId,
-  //           email: data.me.local.email,
-  //           connectedPageId: data.me.connectedPageId,
-  //           connectedPage: data.me.userPages?.find(
-  //             (el) => el._id === data.me.connectedPageId,
-  //           ),
-  //           userPages: data.me.userPages,
-  //         }
-  //       })
-  //       setisAuthenticated(true)
-  //     }
-  //   },
+    onCompleted: (data) => {
+      if (data) {
+        setActiveProfile((user) => {
+          return {
+            ...user,
+            userId: data.me._id,
+            firstName: data.me.firstName,
+            lastName: data.me.lastName,
+            birthDate: data.me.birthDate,
+            address: data.me.address,
+            phoneNumber: data.me.phoneNumber,
+            background: data.me.background,
+            accountState: data.me.accountState,
+            profileImageUrl: data.me.avatar,
+            walletId: data.me.walletId,
+            email: data.me.local.email,
+            connectedPageId: data.me.connectedPageId,
+            connectedPage: data.me.userPages?.find(
+              (el) => el._id === data.me.connectedPageId
+            ),
+            userPages: data.me.userPages,
+          };
+        });
+        setisAuthenticated(true);
+      }
+    },
 
-  //   onError: (error) => {
-  //     setisAuthenticated(false)
-  //   },
-  // })
+    onError: (error) => {
+      setisAuthenticated(false);
+    },
+  });
 
   /// create Account
   const [createAccount] = useMutation(POST_SIGNUP, {
@@ -81,7 +83,7 @@ function AuthContextProvider({ children }) {
       if (data) {
         localStorage.setItem("accessToken", data.login.accessToken);
         localStorage.setItem("refreshToken", data.login.refreshToken);
-        // loaduser()
+        loaduser();
       }
     },
     onError: (error) => {
@@ -159,7 +161,7 @@ function AuthContextProvider({ children }) {
         createAccount,
         login,
         logout,
-        // loaduser,
+        loaduser,
         // updatePassword,
         authentificationError,
         setAuthenticationError,
